@@ -1,3 +1,4 @@
+%{
 %Problem 8.11
 format long
 k = [6 7 8];
@@ -23,9 +24,11 @@ for i = k
     fprintf('for k =%g', i);
     fprintf('\n');
 end
+%}
 
 %Problem 13.3
-%{
+
+%Past Moores Law Data (Yr vs Transistor ct)
 T = [
 1971 2250
 1972 2500 
@@ -76,6 +79,5 @@ y_plot = x(1) + x(2)*x_plot;
 scatter(T(:, 1) - 1970, log(T(:, 2))./log(10));
 hold on
 plot(x_plot, y_plot);
-%}
 
 
